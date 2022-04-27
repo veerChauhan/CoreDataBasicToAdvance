@@ -11,11 +11,13 @@ struct ContentView: View {
     let coreDataManager: CoreDataManager
     @State  private var movieName: String = ""
     @State private var movies:[Movie]  = [Movie]()
+    @State private var needsRefresh: Bool = false
 
     private func populateMovies() {
         movies = coreDataManager.getAllMovies()
     }
     var body: some View {
+        NavigationView {
         VStack {
             TextField("Enter movie Name", text: $movieName)
                 .textFieldStyle(.roundedBorder)
@@ -24,11 +26,12 @@ struct ContentView: View {
                 populateMovies()
             }
             
-            
             List {
                 ForEach (movies, id: \.self) {
                     movie in
-                    Text(movie.title ?? "")
+                    NavigationLink(destination: MovieDetailMovie(movie: movie,coreDataManager: coreDataManager, needsRefresh:$needsRefresh)) {
+                        Text(movie.title ?? "")
+                    }
                 }.onDelete { indexSet in
                     indexSet.forEach { index in
                         let movie = movies[index]
@@ -37,12 +40,14 @@ struct ContentView: View {
                     }
                     
                 }
-            }
+            }.listStyle(.plain)
+                .accentColor(needsRefresh ? .white : .red)
             Spacer()
         }.padding()
             .onAppear {
                 populateMovies()
             }
+        }
     }
 }
 

@@ -34,6 +34,15 @@ class CoreDataManager {
         }
     }
     
+    
+    func updateMovie() {
+        do {
+            try persistanceContainer.viewContext.save()
+        } catch {
+            persistanceContainer.viewContext.rollback()
+        }
+    }
+    
     func getAllMovies() -> [Movie] {
     
         //get all moview
@@ -60,4 +69,5 @@ class CoreDataManager {
         }
     }
 }
+
 

@@ -16,6 +16,7 @@
 		FA761D0E2819D389000D59F9 /* MyCoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA761D0D2819D389000D59F9 /* MyCoreDataUITestsLaunchTests.swift */; };
 		FA761D1C2819D3B9000D59F9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA761D1A2819D3B9000D59F9 /* Model.xcdatamodeld */; };
 		FA761D1F2819D56F000D59F9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA761D1E2819D56F000D59F9 /* CoreDataManager.swift */; };
+		FA83E2122819E4470079104F /* MovieDetailMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83E2112819E4470079104F /* MovieDetailMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FA761D0D2819D389000D59F9 /* MyCoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA761D1B2819D3B9000D59F9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FA761D1E2819D56F000D59F9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FA83E2112819E4470079104F /* MovieDetailMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FA761CF02819D387000D59F9 /* MyCoreDataApp.swift */,
 				FA761D1A2819D3B9000D59F9 /* Model.xcdatamodeld */,
 				FA761CF22819D387000D59F9 /* ContentView.swift */,
+				FA83E2112819E4470079104F /* MovieDetailMovie.swift */,
 				FA761CF42819D389000D59F9 /* Assets.xcassets */,
 				FA761CF62819D389000D59F9 /* Preview Content */,
 			);
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA761CF32819D387000D59F9 /* ContentView.swift in Sources */,
+				FA83E2122819E4470079104F /* MovieDetailMovie.swift in Sources */,
 				FA761D1F2819D56F000D59F9 /* CoreDataManager.swift in Sources */,
 				FA761CF12819D387000D59F9 /* MyCoreDataApp.swift in Sources */,
 				FA761D1C2819D3B9000D59F9 /* Model.xcdatamodeld in Sources */,
